@@ -1,0 +1,20 @@
+{
+  "name": "build-events-gateway-cutover",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test src/build_events.test.ts",
+    "serve": "node --experimental-strip-types src/release_service.ts",
+    "diagnose": "node --experimental-strip-types src/diagnose_cli.ts"
+  },
+  "dependencies": {
+    "openai": "^4.60.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "build_id": "b-20482",
+  "repo": "acme/cli",
+  "branch": "release/1.4",
+  "status": "failed",
+  "duration_ms": 87400,
+  "attempt": 1,
+  "failed_step": "tsc",
+  "log_tail": "src/commands/publish.ts(41,7): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'."
+}
